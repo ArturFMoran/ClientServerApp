@@ -32,9 +32,13 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func signIn(_ sender: Any)
-    {
-        (loginTextfield.text == "user") && (passwordTextfield.text == "password") ? performSegue(withIdentifier: segueToMenu, sender: nil) : warning()
+    @IBAction func signIn(_ sender: Any){
+        guard let user = loginTextfield.text, let password = passwordTextfield.text else {
+            print("Empty")
+            return
+        }
+        
+        user == "user" && password == "password" ? performSegue(withIdentifier: segueToMenu, sender: nil) : warning()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
