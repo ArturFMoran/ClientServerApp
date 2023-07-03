@@ -35,20 +35,22 @@ extension FriendsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 15
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 60
     
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIndentifier, for: indexPath) as! FriendTableViewCell
+        cell.configure()
         
-        cell.avatarImageView.image = UIImage(named: "1")
-        cell.nameLabel.text = "Friend"
-        cell.idLabel.text = "id1"
+//        cell.setup(indexPath)
+//        cell.defaultSetup(indexPath)
+        indexPath.row + 1 <= 10 ? cell.setup(indexPath) : cell.defaultSetup(indexPath)
+//        cell.setup(UIImage(named: "\(indexPath.row + 1)"), "Друг №\(indexPath.row + 1)", "id\(indexPath.row + 1)", indexPath)
         
         return cell
     }
