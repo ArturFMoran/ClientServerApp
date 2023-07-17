@@ -29,9 +29,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+                view.addGestureRecognizer(tapGesture)
+        loginTextfield.borderStyle = .line
+        passwordTextfield.borderStyle = .line
 
     }
 
+    @objc func hideKeyboard() {
+            view.endEditing(true)
+        }
+    
     @IBAction func signIn(_ sender: Any){
         guard let user = loginTextfield.text, let password = passwordTextfield.text else {
             print("Empty")
