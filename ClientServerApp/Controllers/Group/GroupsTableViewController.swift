@@ -9,7 +9,6 @@ import UIKit
 
 class GroupsTableViewController: UITableViewController {
     
-    let cellName = "GroupTableViewCell"
     let cellIdentifier = "groupCell"
     
     override func viewDidLoad() {
