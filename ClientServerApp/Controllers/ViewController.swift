@@ -7,9 +7,9 @@
 
 import UIKit
 
+private let segueToMenu = "fromMainToMenu"
+
 class ViewController: UIViewController {
-    
-    let segueToMenu = "fromMainToMenu"
 
     @IBOutlet var welcomeView: UIView!
     @IBOutlet weak var welcomLabel: UILabel!

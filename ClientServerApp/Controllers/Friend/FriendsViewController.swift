@@ -7,16 +7,19 @@
 
 import UIKit
 
+private let cellIndentifier = "friendCell"
+private let friednNibName = "FriendTableViewCell"
+private let fromListToProfileSegue = "fromListToProfile"
+
 class FriendsViewController: UIViewController {
-    let cellIndentifier = "friendCell"
-    let friednNibName = "FriendTableViewCell"
-    let fromListToProfileSegue = "fromListToProfile"
+    
     
     @IBOutlet weak var friendsTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.title = "My Friends"
         self.friendsTableView.register(UINib(nibName: friednNibName, bundle: nil), forCellReuseIdentifier: cellIndentifier)
         
         friendsTableView.dataSource = self

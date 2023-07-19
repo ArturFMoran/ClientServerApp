@@ -11,11 +11,6 @@ class GroupTableViewCell: UITableViewCell {
     
     let groupName = UILabel()
     let groupImage = UIImageView()
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -54,6 +49,12 @@ class GroupTableViewCell: UITableViewCell {
         ])
         groupImage.layer.cornerRadius = 25
         groupImage.clipsToBounds = true
+    }
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

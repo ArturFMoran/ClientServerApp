@@ -40,7 +40,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWJ-Ny-Fwn">
-                                <rect key="frame" x="158.66666666666666" y="491" width="75.666666666666657" height="75"/>
+                                <rect key="frame" x="159" y="491" width="75" height="75"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="8iy-6m-p5L"/>
@@ -48,6 +48,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -173,22 +174,51 @@
             </objects>
             <point key="canvasLocation" x="2105" y="694"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Photo View Controller-->
+        <scene sceneID="jhZ-RW-FAo">
+            <objects>
+                <viewController storyboardIdentifier="PhotoViewController" id="Y6R-2X-BNi" customClass="PhotoViewController" customModule="ClientServerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="diU-K0-tJK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hfu-Dx-i5u">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aki-6D-bvL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hfu-Dx-i5u" firstAttribute="top" secondItem="aki-6D-bvL" secondAttribute="top" id="P4n-VP-LoR"/>
+                            <constraint firstItem="aki-6D-bvL" firstAttribute="bottom" secondItem="hfu-Dx-i5u" secondAttribute="bottom" id="Vib-YN-xRy"/>
+                            <constraint firstItem="hfu-Dx-i5u" firstAttribute="leading" secondItem="aki-6D-bvL" secondAttribute="leading" id="ieD-Kd-Wfz"/>
+                            <constraint firstItem="aki-6D-bvL" firstAttribute="trailing" secondItem="hfu-Dx-i5u" secondAttribute="trailing" id="m3u-Dm-AJ7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="hfu-Dx-i5u" id="vHr-w7-3sb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxS-oq-jgz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="1430"/>
+        </scene>
+        <!--Gallery Collection View Controller-->
         <scene sceneID="4Ix-yA-JA7">
             <objects>
-                <collectionViewController id="vkf-Ma-VCE" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="GalleryCollectionViewController" id="vkf-Ma-VCE" customClass="GalleryCollectionViewController" customModule="ClientServerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xXF-f4-laN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rjU-IQ-qQe">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rjU-IQ-qQe">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8Qo-FN-8zE">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="galleryCell" id="8Qo-FN-8zE" customClass="GalleryCollectionViewCell" customModule="ClientServerApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VmI-Mf-9A1">
