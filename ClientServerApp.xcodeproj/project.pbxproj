@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29561C3D2A6EBF2C00A2B6C3 /* NewGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29561C3C2A6EBF2C00A2B6C3 /* NewGroupTableViewCell.swift */; };
+		29561C3F2A6EBF4600A2B6C3 /* NewGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29561C3E2A6EBF4600A2B6C3 /* NewGroupsTableViewController.swift */; };
 		2971E7742A447096002AE0A4 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971E7732A447096002AE0A4 /* GroupsTableViewController.swift */; };
 		2989A3742A4C329900430837 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989A3732A4C329900430837 /* FriendsViewController.swift */; };
 		29B0FAA52A3CA6B30050F5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0FAA42A3CA6B30050F5EB /* AppDelegate.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29561C3C2A6EBF2C00A2B6C3 /* NewGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupTableViewCell.swift; sourceTree = "<group>"; };
+		29561C3E2A6EBF4600A2B6C3 /* NewGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupsTableViewController.swift; sourceTree = "<group>"; };
 		2971E7732A447096002AE0A4 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		2989A3732A4C329900430837 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendsViewController.swift; path = ClientServerApp/Controllers/Friend/FriendsViewController.swift; sourceTree = SOURCE_ROOT; };
 		29B0FAA12A3CA6B30050F5EB /* ClientServerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientServerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29561C3B2A6EBF0800A2B6C3 /* New Groups */ = {
+			isa = PBXGroup;
+			children = (
+				29561C3C2A6EBF2C00A2B6C3 /* NewGroupTableViewCell.swift */,
+				29561C3E2A6EBF4600A2B6C3 /* NewGroupsTableViewController.swift */,
+			);
+			path = "New Groups";
+			sourceTree = "<group>";
+		};
 		2971E7712A447004002AE0A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +121,7 @@
 			children = (
 				2971E7732A447096002AE0A4 /* GroupsTableViewController.swift */,
 				29CFF67B2A6593E700F90CFB /* GroupTableViewCell.swift */,
+				29561C3B2A6EBF0800A2B6C3 /* New Groups */,
 			);
 			path = Group;
 			sourceTree = "<group>";
@@ -213,9 +227,11 @@
 				29C14B222A68678900D6E977 /* GalleryCollectionViewController.swift in Sources */,
 				2971E7742A447096002AE0A4 /* GroupsTableViewController.swift in Sources */,
 				29F09CDD2A4C34840003FAE8 /* FriendTableViewCell.swift in Sources */,
+				29561C3F2A6EBF4600A2B6C3 /* NewGroupsTableViewController.swift in Sources */,
 				29B0FAA52A3CA6B30050F5EB /* AppDelegate.swift in Sources */,
 				29C14B252A6867A500D6E977 /* GalleryCollectionViewCell.swift in Sources */,
 				29B0FAA72A3CA6B30050F5EB /* SceneDelegate.swift in Sources */,
+				29561C3D2A6EBF2C00A2B6C3 /* NewGroupTableViewCell.swift in Sources */,
 				29C14B282A68742200D6E977 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +384,7 @@
 				DEVELOPMENT_TEAM = 7KN9YRVLDB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClientServerApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "VK clone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -399,6 +416,7 @@
 				DEVELOPMENT_TEAM = 7KN9YRVLDB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClientServerApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "VK clone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
