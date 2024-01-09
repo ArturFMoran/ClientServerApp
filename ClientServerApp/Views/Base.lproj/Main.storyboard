@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="ena-lO-gho" userLabel="Login &amp; Pass Stack View">
-                                <rect key="frame" x="50" y="334.33333333333331" width="293" height="90"/>
+                                <rect key="frame" x="50" y="354.66666666666669" width="293" height="90"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user" borderStyle="roundedRect" placeholder="Enter Your Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-F6-YHF" userLabel="login textfield">
                                         <rect key="frame" x="0.0" y="0.0" width="293" height="34"/>
@@ -40,7 +40,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWJ-Ny-Fwn">
-                                <rect key="frame" x="159" y="491" width="75" height="75"/>
+                                <rect key="frame" x="159" y="511.33333333333326" width="75" height="75"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="8iy-6m-p5L"/>
@@ -60,8 +60,8 @@
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Nt-Vu-Geq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRP-j7-0Bu">
-                                <rect key="frame" x="196.66666666666666" y="310.33333333333331" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRP-j7-0Bu">
+                                <rect key="frame" x="194.33333333333334" y="310.33333333333331" width="4.6666666666666572" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -87,6 +87,7 @@
                         <outlet property="loginAndPasswordStack" destination="ena-lO-gho" id="yN1-E7-qph"/>
                         <outlet property="loginTextfield" destination="hZ4-F6-YHF" id="hHK-yV-9ya"/>
                         <outlet property="passwordTextfield" destination="Gcz-YW-uRV" id="WDt-3s-Blp"/>
+                        <outlet property="signInButton" destination="bWJ-Ny-Fwn" id="ceM-du-bmz"/>
                         <outlet property="warningLabel" destination="fRP-j7-0Bu" id="UfM-hW-uFf"/>
                         <outlet property="welcomLabel" destination="y2X-rz-FMH" id="Hxm-To-Iw0"/>
                         <outlet property="welcomeView" destination="8bC-Xf-vdC" id="qns-Uj-Mor"/>
