@@ -35,7 +35,11 @@
                         </constraints>
                     </view>
                     <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gGJ-Ux-YYK">
+<<<<<<< HEAD
                         <rect key="frame" x="129" y="43" width="428" height="43.333333333333343"/>
+=======
+                        <rect key="frame" x="129" y="41.666666666666671" width="428" height="45.666666666666671"/>
+>>>>>>> a13f2eda74322ede95622fb1f879659e95ea8a7e
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwU-rH-GFe">
                                 <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -44,9 +48,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-6k-fwi">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="25.333333333333329" width="37.333333333333336" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                                <rect key="frame" x="0.0" y="25.333333333333336" width="41.333333333333336" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+>>>>>>> a13f2eda74322ede95622fb1f879659e95ea8a7e
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

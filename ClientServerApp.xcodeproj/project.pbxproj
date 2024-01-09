@@ -16,10 +16,13 @@
 		29B0FAA92A3CA6B30050F5EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B0FAA82A3CA6B30050F5EB /* ViewController.swift */; };
 		29B0FAAC2A3CA6B30050F5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B0FAAA2A3CA6B30050F5EB /* Main.storyboard */; };
 		29B0FAB12A3CA6B40050F5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B0FAAF2A3CA6B40050F5EB /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
 		29C14B222A68678900D6E977 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C14B212A68678900D6E977 /* GalleryCollectionViewController.swift */; };
 		29C14B252A6867A500D6E977 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C14B232A6867A500D6E977 /* GalleryCollectionViewCell.swift */; };
 		29C14B262A6867A500D6E977 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C14B242A6867A500D6E977 /* GalleryCollectionViewCell.xib */; };
 		29C14B282A68742200D6E977 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C14B272A68742200D6E977 /* PhotoViewController.swift */; };
+=======
+>>>>>>> a13f2eda74322ede95622fb1f879659e95ea8a7e
 		29CFF67C2A6593E700F90CFB /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFF67B2A6593E700F90CFB /* GroupTableViewCell.swift */; };
 		29CFF6802A659E7C00F90CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CFF67F2A659E7C00F90CFB /* Assets.xcassets */; };
 		29F09CDD2A4C34840003FAE8 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F09CDB2A4C34840003FAE8 /* FriendTableViewCell.swift */; };
@@ -38,10 +41,13 @@
 		29B0FAAB2A3CA6B30050F5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29B0FAB02A3CA6B40050F5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29B0FAB22A3CA6B40050F5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		29C14B212A68678900D6E977 /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		29C14B232A6867A500D6E977 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		29C14B242A6867A500D6E977 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
 		29C14B272A68742200D6E977 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> a13f2eda74322ede95622fb1f879659e95ea8a7e
 		29CFF67B2A6593E700F90CFB /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 		29CFF67F2A659E7C00F90CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F09CDB2A4C34840003FAE8 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
@@ -121,11 +127,15 @@
 			children = (
 				2971E7732A447096002AE0A4 /* GroupsTableViewController.swift */,
 				29CFF67B2A6593E700F90CFB /* GroupTableViewCell.swift */,
+<<<<<<< HEAD
 				29561C3B2A6EBF0800A2B6C3 /* New Groups */,
+=======
+>>>>>>> a13f2eda74322ede95622fb1f879659e95ea8a7e
 			);
 			path = Group;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		29C14B202A68675F00D6E977 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,13 +147,18 @@
 			path = Gallery;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> a13f2eda74322ede95622fb1f879659e95ea8a7e
 		29F09CDA2A4C346D0003FAE8 /* Friend */ = {
 			isa = PBXGroup;
 			children = (
 				29F09CDB2A4C34840003FAE8 /* FriendTableViewCell.swift */,
 				29F09CDC2A4C34840003FAE8 /* FriendTableViewCell.xib */,
 				2989A3732A4C329900430837 /* FriendsViewController.swift */,
+<<<<<<< HEAD
 				29C14B202A68675F00D6E977 /* Gallery */,
+=======
+>>>>>>> a13f2eda74322ede95622fb1f879659e95ea8a7e
 			);
 			path = Friend;
 			sourceTree = "<group>";

@@ -84,6 +84,39 @@ class ViewController: UIViewController {
         warningLabel.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         warningLabel.alpha = 0.7
     }
+<<<<<<< HEAD
 
+=======
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+                view.addGestureRecognizer(tapGesture)
+        loginTextfield.borderStyle = .line
+        passwordTextfield.borderStyle = .line
+
+    }
+
+    @objc func hideKeyboard() {
+            view.endEditing(true)
+        }
+    
+    @IBAction func signIn(_ sender: Any){
+        guard let user = loginTextfield.text, let password = passwordTextfield.text else {
+            print("Empty")
+            return
+        }
+        
+        user == "user" && password == "password" ? performSegue(withIdentifier: segueToMenu, sender: nil) : warning()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        warningLabel.text = ""
+    }
+    
+>>>>>>> a13f2eda74322ede95622fb1f879659e95ea8a7e
 }
 
