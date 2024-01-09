@@ -2,6 +2,7 @@
   "colors" : [
     {
       "idiom" : "universal"
+<<<<<<< HEAD
     },
     {
       "appearances" : [
@@ -11,6 +12,8 @@
         }
       ],
       "idiom" : "universal"
+=======
+>>>>>>> refs/remotes/origin/master
     }
   ],
   "info" : {
